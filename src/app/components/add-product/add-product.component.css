@@ -1,0 +1,19 @@
+.submit-form {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  span{
+    font-weight: bold;
+  }
+  .container{
+    padding: auto;
+  }
+  .nav-link{
+    font-size: 20px;
+  }
+  @media (max-width:576px){
+    .navbar-brand, .nav-link{
+      font-size: 16px;
+    }
+  }

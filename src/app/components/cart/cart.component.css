@@ -1,0 +1,239 @@
+.main{
+    margin-top: 2rem;
+}
+.wrapper{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+  
+li {
+    float: left;
+  }
+li a {
+  display: block;
+  padding: 8px;
+  color: #1D3557;
+}
+
+.card {
+  position: relative;
+  border: 1px solid #81AE9D;
+  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+  height: 180px;
+  overflow: hidden;
+ }
+ .card-body{
+  padding-top: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  
+}
+.pwc{
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media (min-width:576px){
+  .wrapper{
+    width: 70%;
+  
+  }
+  .card{
+    height: 120px;
+  }
+  .card-body{
+    padding: 0;
+  }
+  .pwc img{
+    height: 100px;
+  }
+  
+}
+
+
+input{
+    width: 1.7rem;
+    text-align: center;
+    font-size: larger;
+    border:inherit;
+    
+}
+input:focus{
+    
+    outline: none;
+    
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+button{
+    width: 1.2rem;
+    height: 1.2rem;
+    border:inherit;
+    border-radius: .5em;
+    color: #1D3557;
+    text-align: center;
+}
+.checkout{
+  width: 155px;
+  height: 30px;
+  color: white;
+  background-color: #1D3557;
+  line-height: 3px;
+}
+     
+  
+
+     
+     .imgText{
+       width: 100%;
+       height: 60px;
+       position: absolute;
+       bottom: 1px;
+       text-align:left;
+       padding-left: 3rem;
+       color: white;
+       background: rgba(97, 113, 146, 0.53);
+       border-radius: 25px;
+       
+     }
+     .imgText span{
+       font-size: 1.rem;
+       line-height: 60px;
+     }
+     
+     .bi-arrow-right{
+       font-size: 2rem;
+       float: right;
+       color: rgb(255, 255, 255);
+       font-weight:bold;
+       line-height: 60px;
+       padding-right:2rem;
+     }
+     .searchwrapper{
+      
+
+     }
+     .search { 
+      position: relative;
+      display: inline-block;
+      margin: 4px 2px;
+      height: 50px;
+      width: 50px;
+      vertical-align: bottom;
+     }
+
+     .form-control{
+      position: absolute;
+	    left: 49px; /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+	    background-color: rgb(228, 137, 137);
+	    outline: none;
+	    border: none;
+	    padding: 0;
+	    width: 0;
+	    height: 100%;
+	    z-index: 10;
+	    transition-duration: 0.4s;
+	    -moz-transition-duration: 0.4s;
+	    -webkit-transition-duration: 0.4s;
+	    -o-transition-duration: 0.4s;
+    
+      }
+     .form-control:focus {
+      width: 100px; /* Bar width+1px */
+      padding: 0 16px 0 0;
+      
+    }
+     .bi-search { 
+     position: absolute;
+     top: 0;
+     left: 2px;
+     font-size: 1rem;
+     background-color: #ffffff;
+     /* display: inline-block; */
+	   pointer-events: none;
+     }
+    .expandright {
+      left: auto;
+      right: 49px; /* Button width-1px */
+    }
+    
+    .expandright:focus {
+      padding: 0 0 0 16px;
+    }
+     .btn-group{
+      padding-top: 10px;
+     }
+     .bi-dash-square, .bi-plus-square{
+      margin-left: -.5rem;
+      font-size: 1rem;
+     }
+     
+     .btn-xs{
+      line-height: 3px;
+       outline: none;
+      color: #1D3557; 
+      font-weight: bolder !important;
+     }
+     .btn-xs:active{
+       border: inherit;
+       outline: none;
+     }
+     .btn-xs:hover{
+       border: inherit;
+       outline: none;
+     }
+     .bi-arrow-left-square{
+       font-size: 1.7rem;
+       color: #1D3557;
+     }
+     .bi-trash-fill{
+      margin-top: -5px;
+      margin-left: -.5rem;
+      color: #e25300;
+      font-size: 1rem;
+     }
+     .btn-outline{
+      background-color: inherit;
+     }
+     .myb{
+       border-radius: 20px;
+     }
+     .pw{
+      padding: 0.5rem;
+      
+     }
+     .price{
+       margin-top: 15px;
+       font-size: 1.2rem;
+       font-weight: bolder;
+       color: red;
+     }
+     .card img{
+      border-radius: 10px;
+    }
+    
+   .card-text{
+    font-weight: 400;
+    margin-bottom: 0;
+   }
+   .card-footer{
+    flex-direction: column;
+   }
+   h6{
+    margin-bottom: 0;
+    font-weight: bolder;
+
+   }

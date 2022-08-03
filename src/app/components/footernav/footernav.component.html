@@ -1,0 +1,83 @@
+<div class="footer pt-1 bg-light mt-2">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col d-flex justify-content-between d-block d-md-none mobile-footer mx-2">
+          <a routerLink="/home"><i class="bi bi-house-door"></i></a>
+          <a routerLink="/cart"><i class="bi bi-bag"></i><span class="badge badge-light">{{totalItems.length}}</span></a>
+          
+          <div class="dropup ">
+            <a class="dropdown-toggle text-align" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-three-dots-vertical"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="/login">Login</a></li>
+                <li><a class="dropdown-item" routerLink="/register">Register-Shop</a></li>
+                <li *ngIf="isLoggedIn"><a class="dropdown-item" (click)="logout()">Signout</a></li>
+              </ul>
+            
+          </div>
+          
+        </div>
+        <div class=" d-none d-sm-block d-lg-block d-md-block ">
+
+          <footer class="d-flex justify-content-around text-white">
+          <!-- Grid container -->
+          <div class="text-center text-dark copyright">
+            © 2022 Copyright:
+            <a class="text-dark" href="#">SSVK Webworx</a>
+          </div>
+          <div class="subFooter">
+
+            
+            <!-- Section: Social media -->
+            <section class="mb-1">
+              <!-- Facebook -->
+              <a
+                class="btn btn-link"
+                ><i class="bi bi-facebook"></i>
+              </a>
+        
+              <!-- Twitter -->
+              <a
+                class="btn btn-link "
+                ><i class="bi bi-twitter"></i>
+              </a>
+        
+              <!-- Google -->
+              <a
+                class="btn btn-link"
+                ><i class="bi bi-google"></i>
+              </a>
+        
+              <!-- Instagram -->
+              <a
+                class="btn btn-link"
+                ><i class="bi bi-instagram"></i>
+              </a>
+        
+              <!-- Linkedin -->
+              <a
+                class="btn btn-link"
+                ><i class="bi bi-linkedin"></i>
+              </a>
+              <!-- Github -->
+              <a
+                class="btn btn-link"
+                ><i class="bi bi-github"></i>
+              </a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+        
+          <!-- Copyright -->
+          
+          <!-- Copyright -->
+        </footer>
+          
+        </div>
+        <!-- End of .container -->
+      </div>
+    </div>
+  </div>
+
+  

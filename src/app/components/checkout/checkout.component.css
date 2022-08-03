@@ -1,0 +1,207 @@
+
+button{
+    width: 35px;
+    height: 35px;
+    background-color: #e25300;
+    border:inherit;
+    border-radius: .5em;
+    color: #ffffff;
+}
+
+main{
+    margin-top: 1rem;
+   }
+   
+   .bd-placeholder-img {
+       font-size: 1.125rem;
+       text-anchor: middle;
+       -webkit-user-select: none;
+       -moz-user-select: none;
+       user-select: none;
+     }
+     
+     @media (min-width: 768px) {
+       .bd-placeholder-img-lg {
+         font-size: 3.5rem;
+       }
+     }
+     
+     .card {
+      position: relative;
+      border: 1px solid #81AE9D;
+      filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+      border-radius: 10px;
+     }
+     .card img{
+       border-radius: 10px;
+       
+     }
+     .card-body{
+     
+       padding-left: 10px;
+       padding-right: 10px;
+     }
+    .card-text{
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 22px;
+     
+    }
+     .imgText{
+       width: 100%;
+       height: 60px;
+       position: absolute;
+       bottom: 1px;
+       text-align:left;
+       padding-left: 3rem;
+       color: white;
+       background: rgba(97, 113, 146, 0.53);
+       border-radius: 25px;
+       
+     }
+     .imgText span{
+       font-size: 1.rem;
+       line-height: 60px;
+     }
+     .wrapper{
+       display: flex;
+       justify-content: space-around;
+     }
+     .bi-arrow-right{
+       font-size: 2rem;
+       float: right;
+       color: rgb(255, 255, 255);
+       font-weight:bold;
+       line-height: 60px;
+     }
+   
+     
+     .navbar {
+       margin: auto;
+       background-color: #FBFFFA;
+     }
+     
+     @media (min-width: 768px) {
+     
+     }
+     .tntlogo{
+       width:100px;
+       height:35px;
+     } 
+     /* #myCarousel{
+     height: 00px;
+     } */
+     .footer{
+       position: fixed;
+       width: 100%;
+       left: 0;
+       bottom: 0;
+     }
+   
+     .myb{
+       border-radius: 20px
+     }
+     .price{
+       line-height: 15px;
+       font-size: 15px;
+       color: red;
+     }
+
+.navbar-brand{
+    font-size: 1.5rem;
+}
+.nav-link{
+    font-size: 1rem;
+}
+
+
+.contactwrapper{
+  padding: 0.6rem;
+  border-radius: 20px;
+  background-color: rgba(168, 218, 220, 0.2);
+}
+label{
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+#name, #email, #number{
+  border-color: #5470FF  ;
+  outline-color: #5470FF;
+  width: 80%;
+  border-radius: 8px;
+  line-height: .7rem;
+  font-size: .7rem;
+  height: 35px;
+  padding-left: 5px;
+}
+#name{
+  border-color: #753737;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+.btn2{
+    margin-top: 3rem;
+    border: none;
+    background-color: rgba(221,179,162, 0.938);
+}
+.col span{
+    color: red;
+    font-size: 15px;
+}
+.btn2:hover{
+    background-color: blue;
+}
+.dp{
+  gap: 5px;
+}
+
+#date{
+  border-color: #0AA488;
+  border-radius: 8px;
+  line-height: 1rem;
+  font-size: 1rem;
+  height: 40px;
+  padding-left: 5px;
+}
+#time{
+  border-color: #2BEC61;
+  border-radius: 8px;
+  line-height: 1rem;
+  font-size: 1rem;
+  height: 40px;
+  padding-left: 5px;
+}
+.btn1, .btn0{
+  width: 100px;
+  height: 35px;
+  border-radius: 30px;
+}
+.btn1{
+  background-color: #1D3557;
+  font-size: 15px ;
+  color: #ffffff;
+}
+.btn0{
+  background-color: #A8DADC;
+  font-size: 15px ;
+  color: #1D3557;
+}
+p{
+  font-size: 1rem;
+  color: #1D3557 ;
+}
+.red{
+  color:red;
+}
+h4{
+  text-align: center;
+  color: #787a7a;
+  font-weight: 500;
+  text-decoration: underline;
+}
+p{
+  font-weight: bolder;
+}

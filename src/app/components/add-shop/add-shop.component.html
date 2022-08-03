@@ -1,0 +1,56 @@
+
+<div>
+
+    <div class="submit-form">
+      <div *ngIf="currentShop.id">
+        <div class="form-group">
+          <label for="title">Shop Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            required
+            [(ngModel)]="currentShop.name"
+            name="name"
+          />
+        </div>
+  
+        <div class="form-group">
+          <label for="description">Email</label>
+          <input
+            class="form-control"
+            id="email"
+            required
+            [(ngModel)]="currentShop.email"
+            name="email"
+          />
+        </div>
+
+        <div class="form-group">
+            <label for="description">Photo</label>
+            <input type="file"
+              class="form-control"
+              id="img"
+              required
+              [(ngModel)]="currentShop.img"
+              name="img"
+              (change)="fileUpload()"
+            />
+          </div>
+          <div>
+            <button class="btn btn-primary btn-block mt-3" (click)="updateShop()">Update</button>
+
+          </div>
+  
+        
+
+      </div>
+  
+      <div *ngIf="submitted">
+        <h4>Shop was added successfully!</h4>
+        <button class="btn btn-success" (click)="newShop()">Add</button>
+      </div>
+    </div>
+  </div>
+  
+  

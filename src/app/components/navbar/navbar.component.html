@@ -1,0 +1,48 @@
+<header class="">
+    <div class="container">
+      <nav class=" navbar navbar-default justify-content-space">
+        <a class="navbar-brand"><img src="https://i.postimg.cc/WzDN2h29/taskr-removebg-preview.png" 
+          alt="" class="tntlogo"></a>
+          <div class="d-none d-md-block d-lg-block" id="navbarNav">
+            <ul class="navbar-nav d-inline">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" routerLink="/home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/cart">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/register">AddShop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/login">Login</a>
+              </li>
+              
+              
+            </ul>
+            <ul class="navbar-nav d-inline" *ngIf="isLoggedIn">
+              
+              <li class="nav-item">
+                <a href="" class="nav-link" (click)="logout()">LogOut</a>
+              </li>
+            </ul>
+          </div>
+        <div class="searchwarapper">
+           <div class="search input-group">
+             <i class="bi bi-search"></i>
+             <input class="form-control sm-2" type="search" placeholder="Search Shop"aria-label="Search">
+             <div class="input-group-append">
+              <!-- <button
+                class="btn btn-outline-secondary"
+                type="button"
+                (click)="searchName()"
+              >
+                Search
+              </button> -->
+           </div>
+           </div>
+        </div>
+       </nav>
+    </div>
+   
+  </header>

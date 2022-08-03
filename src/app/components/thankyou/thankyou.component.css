@@ -1,0 +1,72 @@
+
+.container{
+    flex-direction: column;
+    height: 100vh;
+}
+img{
+    border-radius: 20px;
+}
+/* text */
+.t{
+    text-align: center;
+    opacity: 0.5;
+}
+h3{
+opacity: 0.7 ; 
+
+}
+h5{
+    opacity: 0.7;
+    
+}
+.btn-primary{
+margin-top: 3rem;
+background-color: #1D3557;
+font-size: 24px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0em;
+border-radius: 50px;
+
+}
+
+.ball-1{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 0px;
+    top: 706px;
+    background: #E63946;
+    border-radius: 100px;
+}
+
+.ball-2{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 36px;
+    top: 665px;
+    border-radius: 100px;
+    background: #445577;
+}
+
+.ball-3{
+position: absolute;
+width: 71px;
+height: 71px;
+left: 85px;
+top: 658px;
+border-radius: 100px;
+background: #1D3557;
+}
+.ball-4{
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    left: 130px;
+    top: 687px;
+    border-radius: 100px;
+    background: #A8DADC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}

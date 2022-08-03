@@ -1,0 +1,55 @@
+.mobile-nav{
+  box-shadow: 0 -1px 3px #8583831a;
+}
+
+
+.tntlogo{
+    width:100px;
+    height:35px;
+  } 
+  .bi-arrow-right{
+    font-size: 1.5rem;
+    float: right;
+    color: rgb(255, 255, 255);
+    font-weight:bold;
+    line-height: 2rem;
+    padding-right:2rem;
+  }
+
+  li {
+    float: left;
+  }
+
+li a {
+  display: block;
+  padding: 8px;
+}
+  .search { 
+  position: relative; 
+  margin: 0 auto ;
+  text-align: center;
+  
+  }
+  
+  .searchwarapper{
+    
+    width: 140px;
+    
+
+  }
+  
+  .search .bi-search { 
+  position: absolute;
+  top: 12%;
+  left: 2px;
+  font-size: 1.2rem;
+  
+  }
+  .form-control{
+  padding-left: 1.5rem;
+  border:inherit;
+  font-size: 0.9rem;
+  }
+  a, a:visited, a:hover, a:active {
+    color: inherit;
+  }

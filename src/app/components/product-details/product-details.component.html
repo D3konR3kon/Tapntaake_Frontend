@@ -1,0 +1,111 @@
+<header >
+  
+    <nav class="navbar justify-content-between px-2">
+    
+        <a (click)="goBack()"  class=""><i class="bi bi-arrow-left-square "></i> </a>
+      
+     </nav>
+  
+</header>
+<div class="container mt-3">
+  <div class="col-md-6">
+    <div *ngIf="viewMode; else elseBlock">
+      <div *ngIf="currentProduct.id">
+        <h4>Tutorial</h4>
+        <div>
+          <label><strong>Title:</strong></label> {{ currentProduct.name }}
+        </div>
+        <div>
+          <label><strong>Description:</strong></label>
+          {{ currentProduct.dec }}
+        </div>
+       
+    
+        <a
+          class="badge badge-warning"
+          routerLink="/productdet/{{ currentProduct.id }}"
+        >
+          Edit
+        </a>
+      </div>
+    
+      <div *ngIf="!currentProduct">
+        <br />
+        <p>Please click on a Tutorial...</p>
+      </div>
+    </div>
+    
+        <ng-template #elseBlock>
+          <div *ngIf="currentProduct.id" class="edit-form">
+            <h5>Product:</h5>
+            <form>
+              <div class="form-group">
+                <label for="title">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="title"
+                  [(ngModel)]="currentProduct.name"
+                  name="title"
+                />
+              </div>
+              <div class="form-group">
+                <label for="description">Description</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="description"
+                  [(ngModel)]="currentProduct.dec"
+                  name="dec"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Price">Price</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="price"
+                  [(ngModel)]="currentProduct.price"
+                  name="price"
+                />
+              </div>
+              <div class="form-group">
+                <label for="image">Photo</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="image"
+                  [(ngModel)]="currentProduct.img"
+                  name="image"
+                />
+              </div>
+        
+              
+            </form>
+            <div class="d-flex justify-content-around btn-group mt-2">
+              <button class="badge badge-danger mr-2 del" (click)="deleteProduct()">
+                Delete
+              </button>
+          
+              <button
+                type="submit"
+                class="badge badge-success update"
+                (click)="updateProduct()"
+              >
+                Update
+              </button>
+            </div>
+            
+            <p>{{ message }}</p>
+          </div>
+          
+        <div *ngIf="!currentProduct.id">
+          <br />
+          <p>Cannot access this product...</p>
+        </div>
+      </ng-template>
+  </div>
+  
+</div>
+
+  

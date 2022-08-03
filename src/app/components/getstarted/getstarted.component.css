@@ -1,0 +1,49 @@
+.container{
+    background-color: #FBFFFA;
+    height: 100vh;
+    position:relative;
+}
+.ball1{
+    position:absolute;
+    top: 40% ;
+    left: -40px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #A8DADC
+}
+.ball2{
+    position:absolute;
+    top: -90px ;
+    right: -50px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #1D3557;
+}
+.ball3{
+    position:absolute;
+    bottom: 30% ;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff0000
+}
+.ball4{
+    position:absolute;
+    bottom:-50px ;
+    left: -40px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #1D3557;
+}
+.tap{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+img{
+   width: 180px;
+}

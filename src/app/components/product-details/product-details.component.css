@@ -1,0 +1,21 @@
+
+.bi-arrow-left-square{
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: bolder !important;
+  }
+  .del{
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+  }
+  .update{
+    background-color: rgb(0, 13, 85);
+    color: #ffffff;
+  }
+  a{
+    text-decoration: none;
+    
+  }
+  a i {
+    color: #000000;
+  }

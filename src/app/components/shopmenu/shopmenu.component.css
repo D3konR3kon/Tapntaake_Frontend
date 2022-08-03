@@ -1,0 +1,158 @@
+main{
+ margin-top: 0;
+}
+.nav-item {
+
+  float: left;
+}
+
+.nav-item a {
+display: block;
+padding: 8px;
+}
+
+section{
+  margin-top: 3rem;
+}
+  .card {
+   position: relative;
+   border: 1px solid #81AE9D;
+   filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+   border-radius: 10px;
+   height: 180px;
+   overflow: hidden;
+  }
+  .myb{
+    margin-top: 1rem;
+  }
+  .card img{
+    border-radius: 10px;
+  }
+  .card-body{
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0;
+  }
+ .card-text{
+  font-size: .9rem;
+  font-weight: 400;
+  margin-bottom: 0;
+ }
+ 
+  .imgText{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 1px;
+    text-align:left;
+    padding-left: 3rem;
+    color: white;
+    background: rgba(97, 113, 146, 0.53);
+    border-radius: 25px;
+    
+  }
+  .imgText span{
+    font-size: 0.6rem;
+    line-height: 60px;
+  }
+  .wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  .bi-arrow-right{
+    font-size: 2rem;
+    float: right;
+    color: rgb(255, 255, 255);
+    font-weight:bold;
+    line-height: 60px;
+    padding-right:2rem;
+  }
+  .search { 
+  position: relative; 
+  margin: 0 auto ;
+  text-align: center;
+  }
+  
+  
+  
+  .search .bi-search { 
+
+  }
+  .form-control{
+  border:inherit;
+  }
+
+  .btn-sm{
+    outline: none;
+  }
+  .btn-sm:active{
+    border: inherit;
+    outline: none;
+  }
+  .btn-sm:hover{
+    border: inherit;
+    outline: none;
+  }
+  .bi-arrow-left-square{
+    font-size: 1.7rem;
+    color: #1D3557;
+  }
+  .navbar {
+
+    margin: auto;
+    background-color: #FBFFFA;
+  }
+  
+
+  .tntlogo{
+    width:100px;
+    height:35px;
+  } 
+
+  .footer{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+
+  .myb{
+    border-radius: 20px
+  }
+  .pw{
+   padding: 0.5rem;
+   
+   
+  }
+ .pwc{
+    border-radius: 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+   
+
+  }
+
+  .price{
+    margin-top: 4px;
+    font-size: 1rem;
+    color: red;
+    font-weight: bolder;
+  }
+  .bi-plus-square{
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: bolder !important;
+  }
+  .aplus{
+    margin-top: 0;
+  }
+  .badge{
+    background-color: rgb(32, 214, 114);
+    color: black;
+    position: relative;
+    top: -13px;
+    left: -4px;
+    border-radius: 50%;
+}
