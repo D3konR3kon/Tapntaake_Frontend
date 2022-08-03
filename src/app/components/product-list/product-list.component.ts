@@ -40,7 +40,7 @@ export class ProductListComponent implements OnInit {
   setActiveTutorial(product: any, index: number): void {
     this.currentProduct = product;
     this.currentIndex = index;
-    console.log("We are here")
+    
   }
 
   removeAllProducts(): void {

@@ -23,7 +23,7 @@ export class CheckoutComponent implements OnInit {
   submitted: boolean = false; // show and hide the success message
 	isLoading: boolean = false; // disable the submit button if we're loading
 	responseMessage?: string; // the response message to show to the user
-  servicefee  = 2
+  currentShopname = JSON.parse(`${localStorage.getItem('shopname')}`)
   totalAmount = JSON.parse(`${localStorage.getItem('Total')}`)
   totalItems:any 
   dataForm = JSON.parse(`${localStorage.getItem('form')}`)
@@ -74,7 +74,9 @@ onSubmit(): void {
     formData.append("name", this.userForm.get("name")?.value);
     formData.append("number", this.userForm.get("number")?.value);
     formData.append("email", this.userForm.get("email")?.value);
-    formData.append("total", this.totalAmount + this.servicefee);
+    formData.append("total", this.totalAmount);
+    formData.append("shopname", this.currentShopname.name);
+    
     
     this.totalItems.map((item: any) => {
       formData.append("item", item.name)

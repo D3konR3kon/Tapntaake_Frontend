@@ -13,7 +13,7 @@ import { TokenStorageService } from 'src/app/services/token-storage.service';
   styleUrls: ['./shopmenu.component.css']
 })
 export class ShopmenuComponent implements OnInit {
-
+  
   isLoggedIn = false
   username?: ""
   public totalItems :any
@@ -30,6 +30,7 @@ export class ShopmenuComponent implements OnInit {
                private tokenStorage : TokenStorageService) { }
 
   ngOnInit(): void {
+    
     this.isLoggedIn = !!this.tokenStorage.getToken()
     if(this.isLoggedIn){
       const user = this.tokenStorage.getUser()
@@ -75,6 +76,7 @@ export class ShopmenuComponent implements OnInit {
         next: (data) => {
           this.currentShop = data;
           console.log(data);
+          localStorage.setItem('shopname',JSON.stringify(this.currentShop))
         },
         error: (e) => console.error(e)
       });

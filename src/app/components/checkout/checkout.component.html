@@ -29,9 +29,8 @@
             </div>
             <div class="col-sm-8 my-5">
                 <div class="card-body p-1" >
-                    <p class="">Subtotal: {{totalAmount | currency:"R"}}</p>
-                    <p class="red">Service Fee: {{servicefee | currency:"R"}}</p>
-                    <p>Total Amount: {{totalAmount + servicefee | currency:"R"}}</p>
+                    <p>Shop Name: {{currentShopname.name}}</p>
+                    <p>Total Amount: {{totalAmount| currency:"R"}}</p>
                     <p>You have {{totalItems.length}} product(s)</p> 
                     <!-- <div *ngFor="let totalItem  of totalItems">
                       <P>{{totalItem.name}}</P>
