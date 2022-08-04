@@ -1,6 +1,6 @@
 
 <div>
-
+  
     <div class="submit-form">
       <div *ngIf="currentShop.id">
         <div class="form-group">
@@ -28,21 +28,21 @@
 
         <div class="form-group">
             <label for="description">Photo</label>
-            <input type="file"
+            <input type="text"
               class="form-control"
               id="img"
               required
               [(ngModel)]="currentShop.img"
               name="img"
-              (change)="fileUpload()"
+              
             />
           </div>
           <div>
             <button class="btn btn-primary btn-block mt-3" (click)="updateShop()">Update</button>
-
+            
           </div>
   
-        
+          <p class="text-secondary mt-2">{{ message }}</p>
 
       </div>
   
