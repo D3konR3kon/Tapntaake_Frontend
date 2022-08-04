@@ -65,8 +65,8 @@
           
           <a class="addbtn" routerLink="/addproduct/{{shop.id}}" *ngIf="token.id == shop.id" title="Dashboard"><i class="bi bi-box-arrow-in-right"></i></a>
           <img [src]="shop.img" alt="">
-          <div class="imgText">
-            <a routerLink="/menu/{{shop.id}}">
+          <div class="imgText" routerLink="/menu/{{shop.id}}">
+            <a>
               <span class="shopname">{{shop.name}}</span><i class="bi bi-arrow-right"></i>
             </a>
             </div>
