@@ -7,15 +7,7 @@
         placeholder="Search by name"
         [(ngModel)]="name"
       />
-      <div class="input-group-append">
-        <button
-          class="btn btn-outline-secondary"
-          type="button"
-          (click)="searchName()"
-        >
-        <i class="bi bi-search"></i>
-        </button>
-      </div>
+      
     </div>
   </div>
 
@@ -24,7 +16,7 @@
     <ul class="list-group">
       <li
         class="list-group-item"
-        *ngFor="let product of products; let i = index"
+        *ngFor="let product of products | filter:name; let i = index"
         [class.active]="i == currentIndex"
         (click)="setActiveTutorial(product, i)"
         
@@ -49,7 +41,7 @@
       
       
       <a
-      class="btn btn-primary btn-block"
+      class="btn btn-primary btn-block mt-2"
       routerLink="/productdet/{{ currentProduct.id }}"
     >
       Edit

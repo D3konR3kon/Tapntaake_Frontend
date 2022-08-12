@@ -22,7 +22,7 @@
        
     
         <a
-          class="badge badge-warning"
+          class="btn btn-primary btn-block"
           routerLink="/productdet/{{ currentProduct.id }}"
         >
           Edit
@@ -82,14 +82,14 @@
         
               
             </form>
-            <div class="d-flex justify-content-around btn-group mt-2">
-              <button class="badge badge-danger mr-2 del" (click)="deleteProduct()">
+            <div class="d-flex justify-content-around  mt-2">
+              <button class="btn btn-danger mr-2" (click)="deleteProduct()">
                 Delete
               </button>
           
               <button
                 type="submit"
-                class="badge badge-success update"
+                class="btn btn-success  "
                 (click)="updateProduct()"
               >
                 Update
@@ -101,7 +101,9 @@
           
         <div *ngIf="!currentProduct.id" class="text-center">
         
-          <h2 class="text-secondary">Loading...</h2>
+          <div class="loadingio-spinner-spin-8g8m8e8x2sm"><div class="ldio-r33d9r5gv19">
+            <div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div>
+            </div></div>
         </div>
       </ng-template>
   </div>

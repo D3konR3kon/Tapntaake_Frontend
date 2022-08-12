@@ -31,15 +31,7 @@
       <div class="searchwarapper col-12 col-sm-3 col-md-3 col-lg-3" >
          <div class="search input-group">
            <input class="form-control" type="search" [(ngModel)]="name" placeholder="Search Shop"aria-label="Search">
-           <!-- <div class="input-group-append">
-            <button
-              class="btn btn-outline-secondary"
-              type="button"
-              (click)="searchName()"
-            >
-            <i class="bi bi-search"></i>
-            </button>
-         </div> -->
+           
          </div>
       </div>
      </nav>
@@ -63,7 +55,7 @@
         
         <div class="card">
           
-          <a class="addbtn" routerLink="/addproduct/{{shop.id}}" *ngIf="token.id == shop.id" title="Dashboard"><i class="bi bi-box-arrow-in-right"></i></a>
+          <a class="dash-btn" routerLink="/addproduct/{{shop.id}}" *ngIf="token.id == shop.id" title="Dashboard"><i class="bi bi-box-arrow-in-right"></i></a>
           <img [src]="shop.img" alt="">
           <div class="imgText" routerLink="/menu/{{shop.id}}">
             <a>

@@ -47,3 +47,9 @@ a, a:visited, a:hover, a:active {
     left: 0;
     bottom: 0;
   }
+
+  .bi-arrow-left-square{
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: bolder !important;
+  }
