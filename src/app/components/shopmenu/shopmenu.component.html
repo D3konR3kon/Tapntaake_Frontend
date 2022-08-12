@@ -29,15 +29,9 @@
 
       <div class="searchwarapper col-12 col-sm-3 col-md-3 col-lg-3" >
          <div class="search input-group">
-           <input class="form-control" type="search" [(ngModel)]="name" placeholder="Search Shop"aria-label="Search">
+           <input class="form-control" type="search" [(ngModel)]="name" placeholder="&#61442; Search Product..."aria-label="Search">
            <div class="input-group-append">
-            <button
-              class="btn btn-outline-secondary"
-              type="button"
-              (click)="searchName()"
-            >
-            <i class="bi bi-search"></i>
-            </button>
+          
          </div>
          </div>
       </div>
@@ -45,25 +39,6 @@
   </div>
  
 </header>
-
-
-<!-- <header class="fixed-top bg-light">
-    <div class="container bg-light navwrapper">
-      <nav class="navbar mx-3 bg-light  justify-content-between">
-        <a class="navbar-brand  d-none d-md-block d-lg-block"><img src="https://i.postimg.cc/WzDN2h29/taskr-removebg-preview.png" 
-          alt="" class="tntlogo"></a>
-          <a routerLink="/home" class="d-block d-sm-none"><i class="bi bi-arrow-left-square"></i> </a>
-          <a  routerLink ="/cart" class="d-none d-sm-block"><i class="bi bi-bag "></i><span class="badge badge-light">{{totalItems.length}}</span></a>
-        <div class=" searchwarapper d-flex justify-content-end">
-           <div class="search">
-             <input class="form-control sm-2" type="search" placeholder="Search Product" [(ngModel)]="name" aria-label="Search">
-             <button class="btn btn-block" (click)="searchName()">Search</button>
-           </div>
-           </div>
-       </nav>
-    </div>
-   
-  </header> -->
 
   <section class="px-4 pt-4" >
     <h3>
@@ -74,7 +49,7 @@
 <main>
     <div class="container main mb-5 px-4">
       <div class="row wrapper ">
-        <div class="col-6 col-sm-3 col-md-3 col-lg-3 b-4 myb" *ngFor="let product of products">
+        <div class="col-6 col-sm-3 col-md-3 col-lg-3 b-4 myb" *ngFor="let product of products | filter:name">
             <div class="card shadow-sm">
                 <div class="pw">
                     <div class="pwc">
@@ -97,12 +72,6 @@
                 </div>
               </div>
         </div>
-  
-       
-
-      
-
-
 
         </div>
     

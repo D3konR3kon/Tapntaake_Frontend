@@ -10,7 +10,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductListComponent implements OnInit {
   products?: Product[]
-  currentProduct: Product = {};
+  currentProduct: Product = {
+    name: ""
+  };
   currentIndex = -1;
   name = '';
   shopId: any
@@ -60,8 +62,9 @@ export class ProductListComponent implements OnInit {
   searchName(): void {
     this.currentProduct = {};
     this.currentIndex = -1;
+    this.shopId = this.route.snapshot.paramMap.get('id')
 
-    this.productsService.findByTitle(this.name)
+    this.productsService.findByTitle(this.name, this.shopId)
       .subscribe({
         next: (data) => {
           this.products = data;

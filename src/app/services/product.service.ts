@@ -16,7 +16,7 @@ export class ProductsService {
 
   constructor( private http: HttpClient ) { }
 
-  getAllProducts(shopId: string | null): Observable<Product[]>{  // SHOP ID 
+  getAllProducts(shopId: string | null): Observable<Product[]>{  
     return this.http.get<Product[]>(`${baseUrl}/${shopId}/all`)
   }
 
@@ -24,7 +24,7 @@ export class ProductsService {
     return this.http.get(`${baseUrl}/${id}`);
   }
 
-  create(data: Product, shopId: any): Observable<Product> {  // SHOP ID
+  create(data: Product, shopId: any): Observable<Product> {  
     return this.http.post(`${baseUrl}/${shopId}`, data, httpOptions);
   }
 
@@ -40,7 +40,9 @@ export class ProductsService {
     return this.http.delete(`${baseUrl}/${shopId}/all`);
   }
 
-  findByTitle(name: any): Observable<Product[]> {
-    return this.http.get<Product[]>(`${baseUrl}/all/?name=${name}`);
+  findByTitle(name: any, shopId: any): Observable<Product[]> {
+    return this.http.get<Product[]>(`${baseUrl}/${shopId}alla?name=${name}`);
   }
+
+  
 }

@@ -70,19 +70,19 @@ export class AddProductComponent implements OnInit {
 
   };
 }
-searchName(): void {
-  this.currentProduct = {};
-  this.currentIndex = -1;
+// searchName(): void {
+//   this.currentProduct = {};
+//   this.currentIndex = -1;
 
-  this.productsService.findByTitle(this.name)
-    .subscribe({
-      next: (data) => {
-        this.prdct = data;
-        console.log(data);
-      },
-      error: (e) => console.error(e)
-    });
-}
+//   this.productsService.findByTitle(this.name)
+//     .subscribe({
+//       next: (data) => {
+//         this.prdct = data;
+//         console.log(data);
+//       },
+//       error: (e) => console.error(e)
+//     });
+// }
 
 
 }

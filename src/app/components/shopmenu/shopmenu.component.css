@@ -1,6 +1,15 @@
 main{
  margin-top: 0;
 }
+.navbar {
+  margin: auto;
+  background-color: #FBFFFA;
+}
+
+.tntlogo{
+  width:100px;
+  height:35px;
+} 
 .nav-item {
 
   float: left;
@@ -24,6 +33,7 @@ section{
   }
   .myb{
     margin-top: 1rem;
+    border-radius: 20px
   }
   .card img{
     border-radius: 10px;
@@ -68,19 +78,11 @@ section{
     line-height: 60px;
     padding-right:2rem;
   }
-  .search { 
-  position: relative; 
-  margin: 0 auto ;
-  text-align: center;
+   .form-control {
+    box-shadow: 0 2px 10px 0 #B0C1D9;
   }
-  
-  
-  
-  .search .bi-search { 
-
-  }
-  .form-control{
-  border:inherit;
+  .form-control::placeholder  {
+    font-family: FontAwesome;
   }
 
   .btn-sm{
@@ -98,39 +100,20 @@ section{
     font-size: 1.7rem;
     color: #1D3557;
   }
-  .navbar {
-
-    margin: auto;
-    background-color: #FBFFFA;
-  }
-  
-
-  .tntlogo{
-    width:100px;
-    height:35px;
-  } 
-
   .footer{
     position: fixed;
     width: 100%;
     left: 0;
     bottom: 0;
   }
-
-  .myb{
-    border-radius: 20px
-  }
   .pw{
-   padding: 0.5rem;
-   
-   
+   padding: 0.5rem; 
   }
  .pwc{
     border-radius: 20px;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
-   
 
   }
 
